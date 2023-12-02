@@ -1,5 +1,14 @@
 #!/usr/bin/python3
 import sys
-arguments = [int(arg) for arg in argv[1:]]
-result = sum(arguments)
-print(result)
+
+if __name__ != "__main__":
+    exit()
+
+i = 0
+result = 0
+for argument in sys.argv:
+    if i != 0:
+        result += int(argument)
+    else:
+        i += 1
+print("{:d}".format(result))
