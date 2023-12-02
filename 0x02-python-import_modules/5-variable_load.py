@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 from variable_load_5 import a
-
-# Print the value of 'a'
-print(a)
+if __name__ != "__main__":
+    exit()
+print("{:d}".format(a))
