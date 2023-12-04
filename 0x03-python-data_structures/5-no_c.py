@@ -1,7 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+
+
 def no_c(my_string):
-    new_string = ''
-    for char in my_string:
-        if char not in ('c', 'C'):
-            new_string += char
-    return new_string
+    """
+    removes all characters 'c' and 'C' from s
+    """
+    new_str = ""
+    for i in my_string:
+        if i not in "cC":
+            new_str += i
+    return (new_str)
